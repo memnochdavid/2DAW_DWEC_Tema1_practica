@@ -829,7 +829,7 @@ function pideGens(){
 }
 //----------------------------------------------------------
 //2
-function viveOmuereInit(prob) {
+function viveOmuere(prob) {
     return Math.random() * 100 < prob ? 1 : 0;
 }
 
@@ -916,7 +916,7 @@ function ejercicio9() {
     tablero = crearMatriz(size);
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
-            tablero[i][j] = viveOmuereInit(prob);
+            tablero[i][j] = viveOmuere(prob);
         }
     }
 
