@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios 2 - Servidores Entorno Cliente</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Desarrollo web en entorno cliente</h1>
+        <h2>Entrega 1</h2>
+    </div>
+    <div id="ejercicio1">
+        <div>
+            <h1>Ejercicio 1</h1>
+            <p> Crea un script que pida al usuario un numero entero positivo N mayor a 0. Hay
+                que controlar que el número introducido sea correcto. Si no es así se volverá a
+                pedir.
+                A continuación debe realizar lo siguiente:</p>
+            <ul id="ejlista">
+                <li>Calcular los divisores del número N y mostrarlos. Un número y es divisor
+                    de otro x si el resultado de efectuar la operación de resto es igual a 0:
+                    x%y = 0 -> y es divisor de x</li>
+                <li>Calcular la suma de los cuadrados de los divisores obtenidos en el paso
+                    anterior y mostrarla.</li>
+                <li>Indicar si esa suma es un cuadrado o no con una frase por pantalla. Se
+                    dice que un número es un cuadrado si es el resultado de la multiplicación
+                    de un número por sí mismo.</li>
+            </ul>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio1a()">Ej01 A</button>
+            <button onclick="ejercicio1b()">Ej01 B</button>
+            <button onclick="ejercicio1c()">Ej01 C</button>
+        </div>
+    </div>
+
+
+    <div id="ejercicio2">
+        <div>
+            <h1>Ejercicio 2</h1>
+            <p>
+                Crear un programa JavaScript donde se introduzca un número de kilómetros que
+                corre un Runner al día. Según los kilómetros recorridos a la semana se clasifica
+                a los Runners en las siguientes categorías usando los siguientes intervalos. Suponemos que un Runner
+                corre los 7 días de la semana los mismos kilómetros al día.
+                <br><br>
+                INTERVALO - CATEGORÍA <br>
+                0 &lt; KILOMETROS &lt;= 10 → Corredor novato <br>
+                10 &lt; KILOMETROS &lt;= 30 → Corredor iniciado <br>
+                30 &lt; KILOMETROS &lt;= 40 → Corredor experto <br>
+                KILOMETROS &gt; 40 → Corredor nivel Élite <br>
+            </p>
+
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio2()">Ej02</button>
+        </div>
+    </div>
+
+    <div id="ejercicio3">
+        <div>
+            <h1>Ejercicio 3</h1>
+            <p> El presupuesto de una obra se distribuye en los siguientes conceptos:</p>
+            <ul id="ej3lista">
+                <li>50% de materiales.</li>
+                <li>20% mano de obras.</li>
+                <li>30% en licencias de obra.</li>
+            </ul>
+            <p>
+                Crear un programa JavaScript que pida mediante un prompt el presupuesto total de la
+                obra y que muestre mediante document.write una lista ordenada del coste de cada
+                concepto. Si el usuario introduce un presupuesto negativo mostrar un mensaje de error
+                dentro de un h1.
+            </p>
+
+            <div id="resultado_ejercicio">
+
+            </div>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio3()">Ej03</button>
+        </div>
+    </div>
+
+    <div id="ejercicio4">
+        <div>
+            <h1>Ejercicio 4</h1>
+            <p>Define un array con los siguientes colores: red, yellow, green, white, blue, brown,
+                pink y black. A continuación, crea un generador aleatorio de banderas:</p>
+            <ul id="ej4lista">
+                <li>Se pide el número de franjas que va a tener la bandera (entre 1 y 5). Se
+                    debe comprobar que el número introducido cumple las características pedidas</li>
+                <li>El programa obtiene de forma aleatoria 5 colores del array. Para obtener un
+                    valor aleatorio se puede utilizar la función de Math random, junto con la función floor. Se utilizan
+                    de la siguiente manera:
+                    nombreArray[Math.floor(Math.random() * nombreArray.length)]
+                </li>
+                <li>IUsando document.write, crea una tabla de una fila y tantas columnas como colores tenga la bandera
+                    generada. Usa el atributo style para rellenar el fondo de
+                    cada celda del color adecuado.
+                    <ul id="ejlista">
+                        <li>En el paso 2 se pueden repetir colores en la bandera.</li>
+                        <li>En el paso 2 NO se pueden repetir colores en la bandera.</li>
+                        <li>En el paso 2 se pueden repetir colores mientras no sean consecutivos (es
+                            decir, no puede haber dos franjas juntas con el mismo color).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio4a()">Ej04 A</button>
+            <button onclick="ejercicio4b()">Ej04 B</button>
+            <button onclick="ejercicio4c()">Ej04 C</button>
+        </div>
+    </div>
+
+    <div id="ejercicio5">
+        <div>
+            <h1>Ejercicio 5</h1>
+            <p>Usando el array de colores del ejercicio anterior, crea un script que solicite 8 palabras
+                al usuario y las almacene en otro array. Ordena ese array (el del usuario) de forma
+                que, si aparecen colores del array de colores, estos queden al principio del array y el
+                resto de palabras al final. Muéstralo por consola.
+                Ejemplo:</p><br>
+            <ul id="ej5lista">
+                <li>Array de palabras del usuario:
+                    <ul id="ej5lista">
+                        <li>["casa","blue","green","orden","brown","bombilla","bici","pink"]</li>
+                    </ul>
+                </li>
+                <li>Array resultante:
+                    <ul id="ej5lista">
+                        <li>["blue","green","brown","pink","casa","orden","bombilla","bici"]</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio5()">Ej05</button>
+        </div>
+    </div>
+
+    <div id="ejercicio6">
+        <div>
+            <h1>Ejercicio 6</h1>
+            <p>Escriba un script que, dados dos arrays cualesquiera, devuelva un nuevo array
+                con los elementos que solo aparecen una vez en total (ya sea en el primer o en el
+                segundo array). El orden debe ser: primero los que están en el primer array y luego
+                los que están en el segundo.<br>
+                Ejemplos:</p>
+            <ul id="ejlista">
+                <li>[1, 2, 3, 3] y [3, 2, 1, 4, 5] ==> [4,5]</li>
+                <li>["Ray", "Jose", "Dani"] y ["Dani", "Jose", "Ivan"] ==> ["Ray","Ivan"]</li>
+                <li>[77, "ciao"] y [78, 42, "ciao"] ==> [77, 78, 42]</li>
+                <li>[1, 2, 3, 3] y [3, 2, 1, 4, 5, 4] ==> [5]</li>
+            </ul>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio6a()">Ej06 A</button>
+            <button onclick="ejercicio6b()">Ej06 B</button>
+            <button onclick="ejercicio6c()">Ej06 C</button>
+            <button onclick="ejercicio6d()">Ej06 D</button>
+        </div>
+    </div>
+
+    <div id="ejercicio7">
+        <div>
+            <h1>Ejercicio 7</h1>
+            <p>Realiza un script que pida 10 números por teclado y que los almacene en un
+                array. A continuación, muestra el contenido de ese array junto al índice de cada
+                número (mira el dibujo).
+                Seguidamente el script pedirá dos posiciones a las que llamaremos inicial y final.
+                Debes comprobar que inicial es menor que final y que ambos números están entre 0 y 9. Si no es así,
+                vuelve a pedirlos.
+                A continuación, coloca el número de la posición inicial en la posición final, desplazando el resto de
+                números en el array para que no se pierda ninguno.
+                Al final se debe mostrar el array resultante.<br>
+                Por ejemplo, para inicial = 3 y final = 7:</p>
+        </div>
+        <div>
+            <img src="img/ej07.png" alt="">
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio7()">Ej07</button>
+        </div>
+    </div>
+
+    <div id="ejercicio8">
+        <div>
+            <h1>Ejercicio 8</h1>
+            <p>Un restaurante nos ha encargado una aplicación para colocar a los clientes en sus mesas.
+                En una mesa se pueden sentar de 0 (mesa vacía) a 4 comensales (mesa llena).
+                El funcionamiento es el siguiente:<br>
+                Cuando llega un cliente se le pregunta cuántos son. Como el programa no está preparado
+                para colocar a grupos mayores a 4, si un cliente solicita una mesa con más comensales (por
+                ejemplo, 6), el programa dará el mensaje “Lo siento, no admitimos grupos de 6, haga grupos
+                de 4 personas como máximo e intente de nuevo” y volverá a preguntar. <br>
+                Para cada grupo nuevo que llega, se busca siempre la primera mesa libre (con 0 personas).
+                Si no quedan mesas libres, se busca una donde haya hueco para todo el grupo (por ejemplo,
+                si el grupo es de dos personas, se podrá colocar en mesas donde haya una o dos personas). <br>
+                Cada vez que se sientan nuevos clientes se debe mostrar el estado de las mesas. Los grupos
+                no se pueden romper, aunque haya huecos sueltos suficientes. <br>
+                A tener en cuenta:</p><br>
+            <ul id="ejlista">
+                <li>El programa comienza pidiendo el número de mesas que tiene el restaurante.</li>
+                <li>Inicialmente, las mesas se cargan con valores aleatorios entre 0 y 4 y mostrará por pantalla como
+                    quedan las mesas inicialmente.</li>
+                <li>El programa seguirá pidiendo comensales hasta que se introduzca un valor negativo.</li>
+            </ul>
+            <br>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio8()">Ej08</button>
+        </div>
+    </div>
+
+    <div id="ejercicio9">
+        <div>
+            <h1>Ejercicio Extra - El juego de la vida</h1>
+            <p>Programar una versión reducida del Juego de la Vida (Conway) usando únicamente arrays,
+                bucles y condicionales. El objetivo es manejar una rejilla 2D, aplicar las reglas clásicas y
+                mostrar el resultado por consola.
+                <br>Requisitos funcionales:
+            </p><br>
+            <ul id="ej9lista">
+                <li>El programa pedirá al usuario (con prompt) lo siguiente:
+                    <ul class="ej9sublista">
+                        <li>Tamaño de la rejilla: pedir una dimensión N (entero) y crear una rejilla
+                            cuadrada N x N. Recuerda validar que N sea entero y 3 ≤ N ≤ 30.</li>
+                        <li>Probabilidad de vida inicial p: porcentaje entre 0 y 100 que determine la
+                            probabilidad de que cada célula nazca viva al generar aleatoriamente. Si
+                            el usuario deja vacío o cancela, usar p = 30 (30%).</li>
+                        <li>Número de generaciones G a simular (entero ≥ 1). Si no se introduce
+                            nada, usar G = 1.</li>
+                    </ul>
+                </li>
+                <li>Generar la rejilla inicial aleatoriamente: cada celda será 1 (viva) con probabilidad p%, o 0
+                    (muerta) con probabilidad 100-p.</li>
+                <li>Reglas (clásicas del Juego de la Vida): para cada célula, contar los 8 vecinos (incluye diagonales).
+                    <ul class="ej9sublista">
+                        <li>Si la célula está viva (1) y tiene menos de 2 vecinos vivos → muere (0) debido a la soledad.
+                        </li>
+                        <li>PSi está viva (1) y tiene 2 o 3 vecinos vivos → permanece viva (1).</li>
+                        <li>Si está viva (1) y tiene más de 3 vecinos vivos → muere (0) debido a la sobrepoblación.</li>
+                        <li>Si está muerta (0) y tiene exactamente 3 vecinos vivos → nace (1).</li>
+                    </ul>
+                </li>
+                <li>Actualización sincrónica: calcular la siguiente generación usando una copia
+                    del estado actual (no actualizar la rejilla en línea mientras cuentas vecinos).
+                </li>
+                <li>Mostrar en consola:
+                    <ul class="ej9sublista">
+                        <li>Rejilla inicial (Generación 0).</li>
+                        <li>Para cada generación desde 1 hasta G, mostrar la rejilla resultante (Generación 1, 2, ...).</li>
+                        <li>Al final mostrar un resumen: número de células vivas en la última generación y, opcionalmente, si la configuración se ha estabilizado (si dos generaciones consecutivas son idénticas, indicarlo y parar antes si ocurre).</li>
+                    </ul>
+                </li>
+
+            </ul>
+            <br>
+        </div>
+        <div class="botones">
+            <button onclick="ejercicio9()">El juego de la vida</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desarrollado por David Duque Díaz para Desarrollo web en entorno cliente - 2025</p>
+    </footer>
+</body>
+
+</html>
